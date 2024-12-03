@@ -1,0 +1,71 @@
+/* -------------------- CSS BY Amanda Moheit-------------------------------------- */
+
+/* -------------------- IMPORTED FONTS -------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* -------------------- ROOT VARIABLES  -------------------- */
+:root {
+    font-family: "Bebas Neue", "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.25em;
+    --black: #000000; 
+    --almost-white: #efefef; 
+    --gray: #bfbfbf; 
+    --blue-green: #90C9BC;
+    --white: #FFFFFF; 
+    --burnt-orange: #CC5500; 
+   
+}
+
+/* --------------------GLOBAL STYLES (mobile first/small) --------------------*/
+
+h1, h2, h3, h4, menu, nav, .social {
+    font-family: 'Bebas Neue'; 
+}
+
+body {
+    font-family: 'Montserrat'; 
+    background-color:#efefef; 
+}
+
+menu {
+    list-style: none; 
+}
+
+menu li a{
+    color:#CC5500;
+    text-decoration: none; 
+}
+aside {
+    background-color:#90C9BC;
+}
+
+#navigation {
+    position: fixed; 
+    top: -75px;
+    right: -50px; 
+    text-decoration: none; 
+   
+   
+  
+
+}
+
+#navigation ul {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+    
+   
+} 
+
+#navigation li {
+    text-decoration: none; 
+    list-style-type: none; 
+}
+
+
+
+
