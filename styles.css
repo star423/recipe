@@ -43,29 +43,140 @@ aside {
     background-color:#90C9BC;
 }
 
-#navigation {
-    position: fixed; 
-    top: -75px;
-    right: -50px; 
-    text-decoration: none; 
-   
-   
-  
+
+nav {
+    grid-area: nav;
+    min-width: 414px;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 3px #bbb;
+    position: fixed;
+    top: 0;
+    z-index:5;
+}
+nav ul {
+    grid-area: hamberger;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    overflow: hidden;
+    max-height: 0;
+}
+nav li img {
+    display: none;
+}
+nav li a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+}
+nav label {
+    cursor: pointer;
+    display: inline-block;
+    user-select: none;
+    position: relative;
+    bottom: 5px;
+    left: 30px;
+}
+nav span {
+    display: block;
+    position: relative;
+ }
+nav label svg {
+    display: block;
+}
+label span:before, label span:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+nav input {
+    display: none;
+}
+nav input:checked ~ ul {
+    max-height: 550px;
+}
+nav h2 {
+    visibility: hidden;
+    height: 1px;
+    width: 1px;
+}
+
+
+menu {
+
+    position: relative;
+    top: 190px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+}
+
+h1 {
+
+    position: relative; 
+    top: 195px;
+    text-align: center; 
+}
+
+.search {
+
+    position: relative; 
+    top: -5145px; 
+    text-align: center; 
+}
+
+#description {
+    position: relative; 
+    top: 180px; 
+}
+
+.one {
+    margin-top: 5px; 
+}
+
+main {
+
+    position: relative; 
+    top: 175px; 
 
 }
 
-#navigation ul {
-    display: grid;  
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+main h2 {
+    text-align: center; 
+    margin-bottom: 0.5px; 
+}
+
+main dl {
+    display: flex;
+    flex-direction:row;
+    line-height: 0.5;  
     
-   
-} 
 
-#navigation li {
-    text-decoration: none; 
-    list-style-type: none; 
 }
 
+main dt {
 
+    font-weight: bold; 
+    
+}
 
+.ingredients ul li {
+    line-height: 2.0;
+}
 
+.directions h3 {
+
+    text-align: center; 
+    margin-top: 0.5px; 
+}
+
+.directions ol li {
+
+    margin-bottom: 1.5px; 
+}
+
+aside {
+    position: relative; 
+    top: 500px; 
+}
